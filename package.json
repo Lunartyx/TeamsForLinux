@@ -1,0 +1,37 @@
+{
+  "name": "teamsforlinux",
+  "productName": "teamsforlinux",
+  "version": "1.0.0",
+  "description": "A JavaScript Electron app to use microsoft teams like a desktop app on linux",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "com.lunartyx.teamsforlinux",
+    "linux": {
+      "target": [
+        "AppImage"
+      ],
+      "icon": "assets/Microsoft_Teams.png"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lunartyx/TeamsForLinux.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lunartyx/TeamsForLinux/issues"
+  },
+  "homepage": "https://github.com/Lunartyx/TeamsForLinux#readme",
+  "devDependencies": {
+    "electron": "^32.0.0",
+    "electron-builder": "^24.13.3",
+    "electron-packager": "^17.1.2"
+  }
+}
